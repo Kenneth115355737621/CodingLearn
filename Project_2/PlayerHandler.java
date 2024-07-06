@@ -8,6 +8,9 @@ import java.util.Scanner;
 import java.io.FileWriter;
 import java.io.IOException;
 
+/**
+ * Do not modify the content from this file
+ */
 public class PlayerHandler {
     private File playerInfoFile;
     private Map<String, Integer[]> playerInfo;

@@ -1,6 +1,8 @@
 package Project_2;
 
-
+/**
+ * Do not modify the content from this file
+ */
 public class Player {
     private String name;
     private int winNum;
