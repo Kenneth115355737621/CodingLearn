@@ -28,7 +28,13 @@ package Project_2;
 public class Run {
     public static void main(String[] args) {
         // test();
-
+        try {
+            Game game = new Game();
+            game.gameStart();    
+        } catch (Exception e) {
+            System.out.println("Game failed due to system error");
+            System.out.println(e.getMessage());
+        }
     }
 
     public static void test() {

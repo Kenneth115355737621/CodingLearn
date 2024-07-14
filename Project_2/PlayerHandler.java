@@ -46,6 +46,9 @@ public class PlayerHandler {
      * @throws Exception the name is not found in the system
      */
     public void setPlayer1(String name) throws Exception {
+        if (player2 != null && player2.getName().equals(name)) {
+            throw new Exception("Two players cannot select the same name");
+        }
         player1 = getPlayer(name);
     }
 
@@ -55,6 +58,9 @@ public class PlayerHandler {
      * @throws Exception the name is not found in the system
      */
     public void setPlayer2(String name) throws Exception {
+        if (player1 != null && player1.getName().equals(name)) {
+            throw new Exception("Two players cannot select the same name");
+        }
         player2 = getPlayer(name);
     }
 
